@@ -4,7 +4,7 @@ fun main(args: Array<String>) {
     val abString =ABString()
     var list=Array<String>(3){""}
     list[0]="a"
-    list[1]="c"
+    list[1]="b"
     list[2]="a"
     println(abString.solution(list))
 }
