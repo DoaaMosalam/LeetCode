@@ -18,10 +18,9 @@ class matrixElementsSum {
            for (j in 0 until matrix[i].size) {
                if (matrix[i][j] == 0) {
                    break
-               }else{
-                   
+               }
                if (!inhabitedRoom) {
-         sum += matrix[i][j]
+                   sum += matrix[i][j]
                }
            }
        }
