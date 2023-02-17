@@ -31,6 +31,12 @@ class checkPalindrome {
         }
         return false
     }
-
+    fun solution2(x: Int): Boolean {
+        val xArray = x.toString()
+        if (xArray == xArray.reversed()){
+            return true
+        }
+        return false
+    }
 
 }
