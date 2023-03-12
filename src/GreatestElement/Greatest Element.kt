@@ -16,7 +16,7 @@ Explanation:
 - index 4 --> the greatest element to the right of index 4 is index 5 (1).
 - index 5 --> there are no elements to the right of index 5, so we put -1.
 */
-fun main(args: Array<String>) {
+fun main() {
      val arr = IntArray(6)
     arr[0]=17
     arr[1]=18
@@ -24,11 +24,8 @@ fun main(args: Array<String>) {
     arr[3]=4
     arr[4]=6
     arr[5]=1
-
     val solution = Solution()
     println(solution.replaceElements(arr).toList())
-
-
 }
 
 class Solution {
