@@ -1,6 +1,6 @@
-package `Contains Duplicate`
+package Contains_Duplicate
 
-fun main(args: Array<String>) {
+fun main() {
     fun containsDuplicate(nums: IntArray): Boolean {
         val seen = HashSet<Int>()
         for (num in nums) {
