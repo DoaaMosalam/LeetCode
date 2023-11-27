@@ -39,15 +39,6 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 class Solution {
     fun removeElement(nums: IntArray,  k: Int): Int {
-//        var elementsRemove = k
-//
-//            var result = nums.filter { it != elementsRemove }.toIntArray()
-//
-//        print("Original Array ${nums.contentToString()}\t")
-//        println("after remove all occurrences:${result.contentToString()}")
-//            elementsRemove = result.size
-//
-//        return elementsRemove
        var elementRemove = 0
         for (i in 0 until nums.size){
             if (nums[i] != k){
@@ -58,6 +49,16 @@ class Solution {
         println("after remove all occurrences:${nums.contentToString()}")
         return elementRemove
     }
+/*this code remove all numbers occurrences in intArray and return array size */
+    //        var elementsRemove = k
+//
+//            var result = nums.filter { it != elementsRemove }.toIntArray()
+//
+//        print("Original Array ${nums.contentToString()}\t")
+//        println("after remove all occurrences:${result.contentToString()}")
+//            elementsRemove = result.size
+//
+//        return elementsRemove
 
 }
 fun main(){
