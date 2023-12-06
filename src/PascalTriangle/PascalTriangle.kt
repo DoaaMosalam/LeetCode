@@ -15,16 +15,15 @@ Input: numRows = 1
 Output: [[1]]*/
 class PascalTriangle {
     fun solution(numRows: Int): List<List<Int>> {
-      val triangle = mutableListOf<List<Int>>()
-    for (i in 0 until numRows) {
-        val row = MutableList(i + 1) { 1 }
-        for (j in 1 until i) {
-            row[j] = triangle[i - 1][j - 1] + triangle[i - 1][j]
+        val triangle = mutableListOf<List<Int>>()
+        for (i in 0 until numRows) {
+            val row = MutableList(i + 1) { 1 }
+            for (j in 1 until i) {
+                row[j] = triangle[i - 1][j - 1] + triangle[i - 1][j]
+            }
+            triangle.add(row)
         }
-        triangle.add(row)
-    }
-    return triangle
-
+        return triangle
     }
 
 }
@@ -38,3 +37,9 @@ fun main(){
     println("Example 2: ${solution.solution(example2)}")
 
 }
+
+
+
+
+
+
